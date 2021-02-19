@@ -1,4 +1,4 @@
-def Calculadora ():
+def calculadora ():
     x = int(input("Dime un numero: "))
     y = int(input("Dime otro numero: "))
     operacion = input("¿Qué operación quieres hacer? SUMAR=s - Restar=r - Multiplicar=m - Dividir=d ")

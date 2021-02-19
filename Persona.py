@@ -1,17 +1,12 @@
-def Persona ():
-    class Person:
-     def __init__(self, name, age, nationality):
+class Persona:
+    def calcular_edad(self, year):
+        self.year=int(year)
+        self.age=2021-self.year
+        return self.age
+
+    def datos_persona(self, name, lastname, day, month, year):
         self.name = name
-        self.age = age
-        self.nationality= nationality
-
-    nombre = (input("Dime tu nombre y apellido: "))
-    y = int(input("¿En qué año naciste?: "))
-    edad=2021-y
-    nacionalidad=(input("Dime tu nacionalidad: "))
-
-    p1 = Person(nombre, edad,nacionalidad)
-
-    print(p1.name)
-    print(p1.age)
-    print(p1.nationality)
+        self.lastname = lastname
+        self.day= day
+        self.month=month
+        self.year=year

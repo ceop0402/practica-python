@@ -1,29 +1,22 @@
-from Calculadora import Calculadora
-from Persona import Persona
- ## def __init__(self, name, lastname, day , month, year):
-   # self.name = name
-    #self.lastname = lastname
-    #self.day= day
-    #self.month=month
-    #self.year=year
+from calculadora import calculadora
+from persona import Persona
+calculadora()
 
-nombre = (input("Ingrese su nombre: "))
-apellido = (input("Ingrese su apellido: "))
-dia=(input("ingrese día de nacimiento: "))
-mes=(input("ingrese mes de nacimiento: "))
-ano=(input("ingrese año de nacimiento: "))
-numero=(input("Ingrese un numero: "))
+name = (input("Ingrese su nombre: "))
+lastname = (input("Ingrese su apellido: "))
+day =(input("ingrese día de nacimiento: "))
+month=(input("ingrese mes de nacimiento: "))
+year=(input("ingrese año de nacimiento: "))
+p=Persona()
+print (p.calcular_edad(year))
+p.datos_persona(name, lastname, day, month, year)
+print("Tu nombre es: " + (p.name + " " + p.lastname))
+print("Tu fecha de nacimiento es: " + p.day + "/" + p.month + "/" + p.year) 
 
-p1 = Person(nombre,apellido,dia,mes,ano)
-
-print(p1.name)
-print(p1.lastname)
-print(p1.day, "/" + p1.month, "/" +p1.year) 
-
-year=int(ano)
-edad=2021-year
-print(edad)
-def my_function():
-   
-   print(edad + "años") 
-   print(edad+numero)
+Numbers = int(input("Ingrese un numero: "))
+Calculo=((Numbers+p.calcular_edad(year)))
+print((Calculo))
+if Calculo%2==0:
+    print (Calculo, "Tu edad es par!!")
+elif Calculo!=0:
+    print(Calculo, "Tu edad es impar!!")
